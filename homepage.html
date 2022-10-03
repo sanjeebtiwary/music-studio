@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="homepagestyle.css">
+</head>
+<body>
+<div class="player">
+    <!-- Details of the Track Upper Section-->
+    <div class="details">
+        <div class="now-playing">Antar Aatma Ki Awaz</div>
+        <div class="track"></div>
+        <div class="track-name">Track Name</div>
+        <div class="artist">Track Artist</div>
+    </div>
+    <!-- Buttons of the player play pause and previous song and next song-->
+    <div class="button">
+        <div class="prev" onclick="prev">
+            <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+        <div class="play-pause" onclick="playpause">
+            <i class="fa fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next" onclick="next">
+            <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+    </div>
+    <!-- Volume Slider -->
+    <div class="slider">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100"
+               value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+    </div>
+
+
+</div>
+
+<script src="working.js"></script>
+</body>
+</html>

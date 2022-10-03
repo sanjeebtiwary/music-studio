@@ -1,0 +1,29 @@
+body{
+    background-color: cadetblue;
+    transition: background-color .5s;
+}
+.player{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+.track{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    background-image: url("");
+
+
+}
+
